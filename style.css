@@ -1,0 +1,166 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1C2734;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    background-color: #111a23;
+    padding: 30px;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* User Input */
+.user-container p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #dcdcdc;
+}
+
+.user-input-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f2c3e;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+#user-input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+}
+
+#search-btn {
+    padding: 8px 15px;
+    border-radius: 10px;
+    background-color: #4B73F0;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+    background-color: #3459db;
+}
+
+/* Progress Bars */
+.progress {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 6px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    background: conic-gradient(var(--color) var(--progress-degree, 0%), #1F2C3E 0%);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border-color: var(--color); /* Border color matches the progress degree color */
+}
+
+.easy-progress {
+    --color: #2ECC71; /* Green */
+}
+
+.medium-progress {
+    --color: #F39C12; /* Yellow */
+}
+
+.hard-progress {
+    --color: #E74C3C; /* Red */
+}
+
+.circle span {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+/* Stats Cards */
+.stats-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px; /* Added margin for padding between user progress and cards */
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card {
+    flex: 1;
+    background-color: #0f151c;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #333; /* Default border color */
+}
+
+.card.easy-card {
+    background-color: #2ECC71; /* Green */
+}
+
+.card.medium-card {
+    background-color: #F39C12; /* Yellow */
+}
+
+.card.hard-card {
+    background-color: #E74C3C; /* Red */
+}
+
+.card h4 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
