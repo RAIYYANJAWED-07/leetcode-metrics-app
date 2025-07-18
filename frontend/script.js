@@ -22,7 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('User should not be empty.');
             return false;
         }
-        const regx = /^[a-zA-Z0-9_]{1,16}$/;
+        console.log('Validating username:', userName);
+        const regx = /^[a-zA-Z0-9_-]{1,16}$/;
+        
         const isMatching = regx.test(userName);
         if (!isMatching) {
             alert('Invalid username format.');
